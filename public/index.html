@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NoobStrap: Augmented Reality Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap Styles and Scripts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- FontAwesome Icons for top button-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- Custom Styles and Scripts -->
+    <link rel="stylesheet" href="style/style.css">
+    <!--Mis en bas du fichier html car ne semble pas fonctionner avec un fichier externe-->
+    <!--<script src="scripts/app.js"></script> -->
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  
+  <button onclick="topFunction()" id="myBtn"  type="button" class="btn btn-default">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#top">NoobStrap</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline ml-auto">
+            <input class="form-control mr-m-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+        </div>
+      </nav> 
+
+
+    <img id=top class="full-width" src="img/banner.jpg">
+
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1>NoobStrap</h1>
+            <p>Augmented Reality Projects Using Web technologies.</p>
+      </div>
+    </div>
+
+      <div class="container-fluid" style="background-color:rgba(47, 221, 252, 0.521);">
+        <h1>Projects</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-3 card" style="width:400px;">
+              <img class="card-img-top" src="img/ar/th-1.jpg" alt="Project 1">
+              <div class="card-body">
+                <h4 class="card-title">Project 1</h4>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <!--  -->
+                <button class="btn btn-primary" onclick="console.log('coucou')">More</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 card" style="width:400px">
+              <img class="card-img-top" src="img/ar/th-2.jpg" alt="Project 2">
+              <div class="card-body">
+                <h4 class="card-title">Project 2</h4>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="btn btn-primary">More</a>
+              </div>
+            </div>  
+            <div class="col-12 col-md-6 col-xl-3 card" style="width:400px" >
+              <img class="card-img-top" src="img/ar/th-3.jpg" alt="Project 3">
+              <div class="card-body">
+                <h4 class="card-title">Project 3</h4>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="btn btn-primary">More</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 card" style="width:400px" >
+              <img class="card-img-top" src="img/ar/th-4.jpg" alt="Project 4">
+              <div class="card-body">
+                <h4 class="card-title">Project 4</h4>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="btn btn-primary">More</a>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    <div class="container-fluid" id="team">
+        <h1>Team</h1>
+        <div class="row">
+          <!--Team 1-->
+          <div class="col-2 col-md-2 col-xl-2">
+            <img class="img-thumbnail rounded-circle"  src="img/faces/face-1.png">
+          </div>
+          <div class="col-4 col-md-4 col-xl-4">            
+            <p class=team-member>Mr Lunettes, UI</p>
+            <p class="d-none d-sm-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>                    
+          </div>
+          <!--Team 2-->
+          <div class="col-2 col-md-2 col-xl-2">
+            <img  class="img-thumbnail rounded-circle" src="img/faces/face-2.png">
+          </div>
+          <div class="col-4 col-md-4 col-xl-4">            
+            <p class=team-member>Fifi, Code</p>
+            <p class="d-none d-sm-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          
+        </div>  
+        <div class="row">
+          <!--Team 3-->
+          <div class="col-2 col-md-2 col-xl-2">
+            <img class="img-thumbnail rounded-circle"  src="img/faces/face-3.png">
+          </div>         
+          <div class="col-4 col-md-4 col-xl-4">            
+            <p class=team-member>Bruce Banner, UX</p>
+
+            <p class="d-none d-sm-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <!--Team 4-->
+          <div class="col-2 col-md-2 col-xl-2">
+            <img  class="img-thumbnail rounded-circle"  src="img/faces/face-4.png">
+          </div>
+          <div class="col-4 col-md-4 col-xl-4">            
+            <p class=team-member>Happy Guy, $$</p>
+            <p class="d-none d-sm-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>    
+
+    </div>
+
+<div class="container-fluid" id="contact">
+    <h1>Contact</h1>
+
+    <form>
+      <div class="form-row">
+        <div class="col">
+          <div class="input-group ">
+            <div  class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+            </div>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name"
+                   required>
+          </div>
+        </div>
+      </div>
+     
+      <div class="form-row">
+        <div class="col">
+          <div class="input-group">
+            <div  class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+            </div>
+            <input type="email" class="form-control" id="email" name="email" placeholder="moi@gmail.com" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col">
+          <div class="input-group ">
+            <div  class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+            </div>
+            <textarea class="form-control" placeholder="Hello!" required></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col">
+          <div class="text-center">
+            <input type="submit" class="btn btn-primary btn-block mb-2" value="Send">
+          </div>
+        </div>
+      </div>
+    </form>
+
+</div>
+
+
+<footer id="site-footer" class="footer">
+    <!-- Copyright -->
+    <div class="container-fluid text-center">
+        <span>Copyright &copy; NoobStrap 2020</span>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+<script>
+  //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+
+// Test 
+  $(document).ready(
+    function() {
+      console.log("Coucou2");
+
+    //console.info("get url=" + url)
+        fetch("http://localhost:8080/v2/rus").then(res => res.json()).then(res => {
+            //console.debug("receive data " + res)
+            console.log("Coucou3" + res);
+        })
+    }
+    )
+
+</script>
+
+
+</body>
+</html>
