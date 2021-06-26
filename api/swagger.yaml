@@ -1,0 +1,269 @@
+---
+swagger: "2.0"
+info:
+  description: "This is a sample server Petstore server.  You can find out more about\
+    \     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net,\
+    \ #swagger](http://swagger.io/irc/).      For this sample, you can use the api\
+    \ key `special-key` to test the authorization     filters."
+  version: "1.0.0"
+  title: "RUI API"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "petstore.swagger.io"
+basePath: "/v2"
+tags:
+- name: "ru"
+  description: "List the declared RU."
+  externalDocs:
+    description: "Find out more"
+    url: "http://swagger.io"
+schemes:
+- "https"
+- "http"
+paths:
+  /rus:
+    get:
+      tags:
+      - "ru"
+      summary: "Get all the R.U"
+      description: ""
+      operationId: "getRUS"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/RU"
+      x-swagger-router-controller: "Ru"
+  /ru/{id}:
+    get:
+      tags:
+      - "ru"
+      summary: "Get the details of a R.U"
+      description: ""
+      operationId: "getRUDetails"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "The RU id."
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Plat"
+      x-swagger-router-controller: "Ru"
+definitions:
+  RU:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+        example: 1
+      name:
+        type: "string"
+        example: "RU 1"
+      sound_level:
+        type: "string"
+        description: "The sound level inside the restaurant."
+        enum:
+        - "low"
+        - "medium"
+        - "high"
+      plats:
+        type: "array"
+        items:
+          $ref: "#/definitions/Plat"
+      taux_occup:
+        type: "integer"
+        format: "int64"
+        example: 51
+        minimum: 0
+        maximum: 100
+      position_gps:
+        type: "string"
+    example:
+      name: "RU 1"
+      plats:
+      - estLeDernierBac: true
+        name: "poulet"
+        ingredients:
+        - alergen:
+          - "lactose"
+          - "fruits à coques"
+          name: "name"
+        - alergen:
+          - "lactose"
+          - "fruits à coques"
+          name: "name"
+        type: "Viande"
+        accompagnements:
+        - name: "name"
+          ingredients:
+          - alergen:
+            - "lactose"
+            - "fruits à coques"
+            name: "name"
+          - alergen:
+            - "lactose"
+            - "fruits à coques"
+            name: "name"
+        - name: "name"
+          ingredients:
+          - alergen:
+            - "lactose"
+            - "fruits à coques"
+            name: "name"
+          - alergen:
+            - "lactose"
+            - "fruits à coques"
+            name: "name"
+      - estLeDernierBac: true
+        name: "poulet"
+        ingredients:
+        - alergen:
+          - "lactose"
+          - "fruits à coques"
+          name: "name"
+        - alergen:
+          - "lactose"
+          - "fruits à coques"
+          name: "name"
+        type: "Viande"
+        accompagnements:
+        - name: "name"
+          ingredients:
+          - alergen:
+            - "lactose"
+            - "fruits à coques"
+            name: "name"
+          - alergen:
+            - "lactose"
+            - "fruits à coques"
+            name: "name"
+        - name: "name"
+          ingredients:
+          - alergen:
+            - "lactose"
+            - "fruits à coques"
+            name: "name"
+          - alergen:
+            - "lactose"
+            - "fruits à coques"
+            name: "name"
+      position_gps: "position_gps"
+      taux_occup: 51
+      id: 1
+      sound_level: "low"
+  Plat:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+        example: "poulet"
+      type:
+        type: "string"
+        example: "Viande"
+        description: "The type of dish."
+        enum:
+        - "Poisson"
+        - "Viande"
+        - "Végétarien"
+      accompagnements:
+        type: "array"
+        items:
+          $ref: "#/definitions/Accompagnement"
+      ingredients:
+        type: "array"
+        items:
+          $ref: "#/definitions/Ingredient"
+      estLeDernierBac:
+        type: "boolean"
+    example:
+      estLeDernierBac: true
+      name: "poulet"
+      ingredients:
+      - alergen:
+        - "lactose"
+        - "fruits à coques"
+        name: "name"
+      - alergen:
+        - "lactose"
+        - "fruits à coques"
+        name: "name"
+      type: "Viande"
+      accompagnements:
+      - name: "name"
+        ingredients:
+        - alergen:
+          - "lactose"
+          - "fruits à coques"
+          name: "name"
+        - alergen:
+          - "lactose"
+          - "fruits à coques"
+          name: "name"
+      - name: "name"
+        ingredients:
+        - alergen:
+          - "lactose"
+          - "fruits à coques"
+          name: "name"
+        - alergen:
+          - "lactose"
+          - "fruits à coques"
+          name: "name"
+  Ingredient:
+    properties:
+      name:
+        type: "string"
+      alergen:
+        type: "array"
+        example:
+        - "lactose"
+        - "fruits à coques"
+        items:
+          type: "string"
+    example:
+      alergen:
+      - "lactose"
+      - "fruits à coques"
+      name: "name"
+  Accompagnement:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+      ingredients:
+        type: "array"
+        items:
+          $ref: "#/definitions/Ingredient"
+    example:
+      name: "name"
+      ingredients:
+      - alergen:
+        - "lactose"
+        - "fruits à coques"
+        name: "name"
+      - alergen:
+        - "lactose"
+        - "fruits à coques"
+        name: "name"
