@@ -1,12 +1,12 @@
 categorie,sous-categorie,nom,ingredients,valeur energetique (calories pour 100g)
-accompagnements,frites,frites,"pomme de terre, huile de colza",310
-,feculents,riz,riz,130
-,,pates,"pates, huile de colza",130
-,legumes,poelee de légumes,"haricots verts, carrotes, choux, courgettes",70
-plats,poisson,poisson pane,"colin,chapelure, farine, oeuf",200
-,,filet de colin ,"colin, beurre, creme,citron, moutarde",150
-,viande,escalope viennoise,"veau,oeuf, farine, huile de colza",250
-,,boulettes de viande,"boeuf, tomate, soja",240
-,,dinde au pistou,"dinde, basilic, champignons, émental, creme",220
-,vegetarien,steak de soja,"soja, sesame, carottes,avoine, tomates",170
-,,chili vegetarien,"haricots rouges, mais, carottes, tomates, oignons",200
+accompagnements,frites,frites,pomme de terre / huile de colza,310
+accompagnements,feculents,riz,riz,130
+accompagnements,feculents,pates,pates / huile de colza,130
+accompagnements,legumes,poelee de légumes,haricots verts / carrotes / choux / courgettes,70
+plats,poisson,poisson pane,colin / chapelure / farine / oeuf,200
+plats,poisson,filet de colin ,colin / beurre / creme / citron / moutarde,150
+plats,viande,escalope viennoise,veau / oeuf / farine/ huile de colza,250
+plats,viande,boulettes de viande,boeuf / tomate / soja,240
+plats,viande,dinde au pistou,dinde / basilic / champignons / émental / creme,220
+plats,vegetarien,steak de soja,soja / sesame / carottes / avoine / tomates,170
+plats,vegetarien,chili vegetarien,haricots rouges / mais / carottes / tomates / oignons,200
